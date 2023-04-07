@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元唐秘境</title>
+</head>
+<body>
+    <img src="logo.jpg" alt="Logo" style="position: absolute; top: 0px; left: 0; width: 100px; height: 120px; background-color: #d3e7ee;"><!--LOGO-->
+<style>
+      body {
+        background-color: #d3e7ee;
+      }
+    </style>
+
+<style>
+      .header {
+        margin-top: 20px;
+      }
+    </style>
+    <!--导航栏-->
+    <style>
+      .dropdowns {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+    <style>
+      nav {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+      }
+      nav li {
+        margin: 0 10px;
+      }
+      nav a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.5s ease-in-out;
+      }
+      nav a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        font-size: 1.5rem;  
+      }
+    </style>
+    <nav style="background-color: transparent;">
+      <ul>
+        <li><a href="home.html">首页</a></li>
+        <li><a href="Product.html">项目简介</a></li>
+        <li><a href="trip in cloud.html">云游炉霍</a></li>
+        <li><a href="IP.html">IP衍生</a></li>
+        <li><a href="about.html">关于我们</a></li>
+      </ul>
+    </nav>
+    <style>
+        nav {
+          margin-top: 50px;
+        }
+        #d1 {
+          margin-top: 50px;
+        }
+      </style>
+<!--轮播图-->
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="3.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 1500); // Change image every 1.5 seconds
+  }
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+</script>
+
+<style>
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.5)}
+    
+    nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+}

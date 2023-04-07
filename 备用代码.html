@@ -1,0 +1,205 @@
+    <!--创建下拉列表框-->
+    <div class="dropdowns">
+        <select name="dropdown1" id="dropdown1">
+          <option value="link1.html">Link 1</option>
+          <option value="link2.html">Link 2</option>
+          <option value="link3.html">Link 3</option>
+          <option value="link4.html">Link 4</option>
+        </select>
+        <select name="dropdown2" id="dropdown2">
+          <option value="link5.html">Link 5</option>
+          <option value="link6.html">Link 6</option>
+          <option value="link7.html">Link 7</option>
+          <option value="link8.html">Link 8</option>
+        </select>
+        <select name="dropdown3" id="dropdown3">
+          <option value="link9.html">Link 9</option>
+          <option value="link10.html">Link 10</option>
+          <option value="link11.html">Link 11</option>
+          <option value="link12.html">Link 12</option>
+        </select>
+        <select name="dropdown4" id="dropdown4">
+          <option value="link13.html">Link 13</option>
+          <option value="link14.html">Link 14</option>
+          <option value="link15.html">Link 15</option>
+          <option value="link16.html">Link 16</option>
+        </select>
+      </div>
+      <style>
+        body {
+            background-image: url("bg.png"); /* 设置背景图片 */
+            background-size:cover; /* 调整背景图片大小以覆盖整个屏幕 */
+        }
+    </style>
+        <!--导航栏-->
+        <style>
+          .dropdowns {
+            display: flex;
+            justify-content: space-evenly;
+          }
+        </style>
+        <style>
+          nav {
+            display: flex;
+            justify-content: space-evenly;
+          }
+          nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+          }
+          nav li {
+            margin: 0 10px;
+          }
+          nav a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.5s ease-in-out;
+          }
+          nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+          }
+        </style>
+        <nav>
+          <ul>
+            <li><a href="home.html">首页</a></li>
+            <li><a href="Product.html">项目简介</a></li>
+            <li><a href="trip in cloud.html">云游炉霍</a></li>
+            <li><a href="IP.html">IP衍生</a></li>
+            <li><a href="about.html">关于我们</a></li>
+          </ul>
+        </nav>
+    <style>
+          nav {
+            margin-top: 50px;
+          }
+          #d1 {
+            margin-top: 50px;
+          }
+        </style>
+    
+      <!--首页轮播图-->
+      <div id="d1" onMouseOver="off()" onmouseleave="on()" style="margin: 0 auto;">
+        <!--onMouseOver="off()"鼠标悬浮停止播放-->
+        <!--onMouseOver="on()"鼠标离开开始播放-->
+        <!--d1为图片展示区域-->
+        <input type="button" value="<" onClick="noadd()" class="i1"><!--上一张按钮-->
+        <input type="button" value=">" onClick="add()" class="i2"><!--下一张按钮-->
+        <div id="d2"><!--播放顺序展示-->
+          <!--五个顺序点-->
+          <div id="d21" onClick=""></div>
+          <div id="d22" onClick=""></div>
+          <div id="d23" onClick=""></div>
+          <div id="d24" onClick=""></div>
+          <div id="d25" onClick=""></div>
+        </div>
+        </div>
+        <style>
+            *{
+                /*去除margin和padding避免定位出现干扰*/
+                /*星号代表选择所有元素*/
+                margin:0px;
+                padding: 0px;
+            }
+            #d1{
+                position:relative;
+                width:1200px;/*定义宽高*/
+                height:413px;
+                background-repeat: no-repeat;/*图片不会平铺出现*/
+                background:url(1.jpg);/*图片用背景的方式展示在d1块上，图片大小为1200px*413px*/
+                margin: 0 auto;
+            }
+            .i2{
+                /*定义按钮大小位置*/
+                width: 100px;
+                height: 50px;
+                position:absolute;/*绝对定位*/
+                top: 50%;
+                right: 0px;
+                margin-top: -25px;
+                font-size: 40px;/*字体大小,采用<>俩符号*/
+            }
+            .i1{
+                /*定义按钮大小位置*/
+                width: 100px;
+                height: 50px;
+                position:absolute;/*绝对定位*/
+                top: 50%;
+                left: 0px<|START|>
+    ```F:\大学\科创\元宇宙助理乡村振兴\网站\home.html
+                font-size: 40px;/*字体大小,采用<>俩符号*/
+            }
+            .i1{
+                /*定义按钮大小位置*/
+                width: 100px;
+                height: 50px;
+                position:absolute;/*绝对定位*/
+                top: 50%;
+                left: 0px;
+            }
+            .i2{
+                /*定义按钮大小位置*/
+                width: 100px;
+                height: 50px;
+                position:absolute;/*绝对定位*/
+                top: 50%;
+                right: 0px;
+            }
+            .container{
+                /*定义轮播图容器大小位置*/
+                position: relative;
+                margin: auto;
+                width: 80%;
+                height: 500px;
+                overflow: hidden;
+            }
+            .slider{
+                /*定义轮播图大小位置*/
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 500%;
+                height: 500px;
+                display: flex;
+                transition: 1s;
+            }
+            .slide{
+                /*定义每张图片大小位置*/
+                position: relative;
+                width: 20%;
+                height: 500px;
+            }
+            .slide img{
+                /*定义图片大小位置*/
+                width: 100%;
+                height: 100%;
+            }
+            .navigation{
+                /*定义轮播图导航大小位置*/
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+            }
+            .dot{
+                /*定义轮播图导航点大小位置*/
+                width: 20px;
+                height: 20px;
+                margin: 0 10px;
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.5);
+                cursor: pointer;
+            }
+            .dot.active{
+                /*定义轮播图导航点激活状态*/
+                background-color: white;
+            }
